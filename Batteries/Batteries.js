@@ -297,7 +297,8 @@ List.push({Task: 'Questionnaire', Parameters: 'STAI_T_001', Instructions: 'Defau
 List.push({Task: 'Questionnaire', Parameters: 'BDI_002', Instructions: 'Default', IconName: 'BDI'})
 List.push({Task: 'Questionnaire', Parameters: 'GDS_001', Instructions: 'Default', IconName: 'GDS'})
 List.push({Task: 'Questionnaire', Parameters: 'EQ5D_001', Instructions: 'Default', IconName: 'EQ-5D'})
-
+List.push({Task: 'Questionnaire', Parameters: 'GAS10_001', Instructions: 'Default', IconName: 'GAS-10'})
+List.push({Task: 'Questionnaire', Parameters: 'CESAM_001', Instructions: 'Default', IconName: 'CESAM'})
 
 
 	BatteryList.push({index: 1007, 
@@ -312,7 +313,7 @@ List.push({Task: 'Questionnaire', Parameters: 'EQ5D_001', Instructions: 'Default
 // ===========
 
 var List = []
-List.push({Task: 'Intake Form', Parameters: 'IntakeForm_EN', Instructions: 'Music', IconName:''})	
+List.push({Task: 'Survey', Parameters: 'Survey_EN', Instructions: 'Music', IconName:''})	
 BatteryList.push({index: 1, 
 	name:'Questionnaires', 
 	description: 'A demonstration of cognitive and behavioral assessments',

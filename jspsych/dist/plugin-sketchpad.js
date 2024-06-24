@@ -466,9 +466,7 @@ var jsPsychSketchpad = (function (jspsych) {
                   x: x,
                   y: y,
                   action: "move",
-                  time: performance.now(),
               });
-              console.log(x)
           }
       }
       end_draw(e) {

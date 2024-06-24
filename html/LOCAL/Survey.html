@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../jspsych/dist/jspsych.js"></script>
+    <script src="../../jspsych/dist/plugin-survey.js"></script>
+    <link rel="stylesheet" href="../../jspsych/dist/jspsych.css" />
+    
+
+  </head>
+  <body></body>
+  <script>
+
+    var jsPsych = initJsPsych({
+      on_finish: function() {
+        jsPsych.data.displayData();
+      }
+    });
+    var timeline = []
+
+const json = {
+  "elements": [
+    {
+        "showClearButton": false,
+        "name": "Gender",
+        "type": "radiogroup",
+        "title": "What is your gender",
+        "isRequired": false,
+        "showNoneItem": false,
+        "showOtherItem": false,
+        "colCount": 1,
+        "choices": ['Male', 'Female', "Neutral"],
+        "separateSpecialChoices": false,
+    }, 
+    {
+        "name": "DOB",
+        "type": "text",
+        "title": "What is your date of birth",
+        "inputType": "date",
+        //"minValueExpression": "today(-30)",
+        "maxValueExpression": "today()",
+        "isRequired": true
+    },
+  ],
+  "showQuestionNumbers": false
+};
+
+
+    const survey_trial = {
+    type: jsPsychSurvey,
+    survey_json: json
+    };
+
+
+    timeline.push(survey_trial);
+
+
+jsPsych.run([survey_trial]);
+    
+</script>
+</html>

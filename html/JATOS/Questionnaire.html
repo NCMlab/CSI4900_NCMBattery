@@ -147,7 +147,7 @@
                   jsPsych.data.addProperties({jatosTaskName: jatos.componentProperties.title});
                 },
                 on_finish: function() {
-                  console.log("SUBMITTIGN DATA")
+                  console.log("SUBMITTING DATA")
                   jatos.submitResultData(jsPsych.data.get().json())
                   if ( SaveLocalFile ) {
                     jsPsych.data.get().localSave('csv','ClockDrawing_data.csv');
