@@ -89,3 +89,4 @@ var EN_gas10 = {}
 EN_gas10.title = title
 EN_gas10.pages = EN_pages
 EN_gas10.description = description
+EN_gas10.QuestionnaireType = 'likert'

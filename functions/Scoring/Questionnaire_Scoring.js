@@ -34,7 +34,7 @@ function Questionnaire_Scoring(data) {
 				console.log("FOUND ACTUAL RESPONSE")
 				console.log(data.response[keys[i]])
 				console.log(data.pages[0][i])
-				TextAnswer = data.pages[0][i].likert_scale_values[data.response[keys[i]]-1].text
+				TextAnswer = data.pages[0][i].likert_scale_values[data.response[keys[i]]].text
 				//Results.AllResults[keys[i]] = data.response[keys[i]]
 				NumericScore = data.response[keys[i]] // Numeric score
 			}

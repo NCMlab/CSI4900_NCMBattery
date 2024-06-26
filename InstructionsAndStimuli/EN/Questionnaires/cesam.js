@@ -69,3 +69,4 @@ var EN_cesam = {}
 EN_cesam.title = title
 EN_cesam.pages = EN_pages
 EN_cesam.description = description
+EN_cesam.QuestionnaireType = 'likert'
