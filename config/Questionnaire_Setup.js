@@ -72,6 +72,16 @@ var GDS_001 = {
     ShowInstructions: false,  
 }
 
+var GDS15_001 = { 
+    questionnaire: ['gds15'], 
+    criteria: [],
+    variable: [],
+    AskForNotes: false,
+    ShowWelcome: false,
+    ShowThankYou: false,
+    ShowInstructions: false,  
+}
+
 var EQ5D_001 = { 
     questionnaire: ['eq5d'], 
     criteria: [],
@@ -86,16 +96,37 @@ var GAS10_001 = {
     questionnaire: ['gas10'], 
     criteria: [],
     variable: [],
-    AskForNotes: true,
+    AskForNotes: false,
     ShowWelcome: false,
     ShowThankYou: false,
     ShowInstructions: false,  
 }
+
 var CESAM_001 = { 
     questionnaire: ['cesam'], 
     criteria: [],
     variable: [],
-    AskForNotes: true,
+    AskForNotes: false,
+    ShowWelcome: false,
+    ShowThankYou: false,
+    ShowInstructions: false,  
+}
+
+var ESS_001 = { 
+    questionnaire: ['ess'], 
+    criteria: [],
+    variable: [],
+    AskForNotes: false,
+    ShowWelcome: false,
+    ShowThankYou: false,
+    ShowInstructions: false,  
+}
+
+var DSSI_001 = { 
+    questionnaire: ['dssi'], 
+    criteria: [],
+    variable: [],
+    AskForNotes: false,
     ShowWelcome: false,
     ShowThankYou: false,
     ShowInstructions: false,  
@@ -109,6 +140,9 @@ add('STAI_T_001', function(){ parameters = STAI_T_001});
 add('BDI_001', function(){ parameters = BDI_001});
 add('BDI_002', function(){ parameters = BDI_002});
 add('GDS_001', function(){ parameters = GDS_001});
+add('GDS15_001', function(){ parameters = GDS15_001});
 add('EQ5D_001', function(){ parameters = EQ5D_001});
 add('GAS10_001', function(){ parameters = GAS10_001});
 add('CESAM_001', function(){ parameters = CESAM_001});
+add('ESS_001', function(){ parameters = ESS_001});
+add('DSSI_001', function(){ parameters = DSSI_001});
