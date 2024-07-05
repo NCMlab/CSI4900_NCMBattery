@@ -44,6 +44,7 @@ var EN_pages = [
 
 var EN_gds = {}
 EN_gds.title = 'Geriatric Depression Scale'
+EN_gds.shortTitle = 'GDS'
 EN_gds.description = "Choose the best answer for how you felt over the past week."
 EN_gds.pages = EN_pages
 EN_gds.QuestionnaireType = 'YesNoLikertTable'
@@ -85,6 +86,7 @@ var FR_pages = [
 
 var FR_gds = {}
 FR_gds.title = 'ÉCHELLE GÉRIATRIQUE DE DÉPRESSION (Yesavage)'
+FR_gds.shortTitle = 'GDS'
 FR_gds.description = "Choisissez la meilleure réponse pour décrire comment vous vous sentiez au cours de la dernière semaine."
 FR_gds.pages = FR_pages
 FR_gds.QuestionnaireType = 'YesNoLikertTable'

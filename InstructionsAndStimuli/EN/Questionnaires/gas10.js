@@ -1,5 +1,5 @@
 var title = "Geriatric Anxiety Scale - 10 Item Version"
-
+var shortTitle = 'GAS-10'
 var description = "Below is a list of common symptoms of anxiety or stress. Please read each item in the list carefully. Indicate how often you have experienced each symptom during the PAST WEEK, INCLUDING TODAY by checking under the corresponding answer."
 
 var likert_scale_values = [
@@ -87,6 +87,7 @@ var EN_pages = [
 
 var EN_gas10 = {}
 EN_gas10.title = title
+EN_gas10.shortTitle = shortTitle
 EN_gas10.pages = EN_pages
 EN_gas10.description = description
 EN_gas10.QuestionnaireType = 'likert'

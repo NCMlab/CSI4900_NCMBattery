@@ -1,4 +1,5 @@
 var title = "The Cannabis Use Disorder Identification Test - Revised (CUDIT-R) "
+var shortTitle = 'CUDIT-R'
 
 var scale01 = [
     "Never",

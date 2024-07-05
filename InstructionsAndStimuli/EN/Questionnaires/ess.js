@@ -1,5 +1,5 @@
 var title = "The Epworth Sleepiness Scale"
-
+var shortTitle = 'ESS'
 var description = "How likely are you to doze off or fall asleep in the following situations, in contrast to feeling just tired? This refers to how you are feeling today only. Even if you have not done some of these things today, try to work out how they would have affected you."
 
 var likert_scale_values = [
@@ -73,6 +73,7 @@ var EN_pages = [
 
 var EN_ess = {}
 EN_ess.title = title
+EN_ess.shortTitle = shortTitle
 EN_ess.pages = EN_pages
 EN_ess.description = description
 EN_ess.QuestionnaireType = 'likert'

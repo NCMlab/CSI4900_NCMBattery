@@ -71,6 +71,7 @@ var EN_pages = [
 
 var EN_eq5d = {}
 EN_eq5d.title = 'Health Questionnaire'
+EN_eq5d.shortTitle = 'EQ-5D'
 EN_eq5d.description = "Under each heading, please tick the ONE box that best describes your health TODAY."
 EN_eq5d.pages = EN_pages
 EN_eq5d.QuestionnaireType = 'YesNoLikertTable'

@@ -1,4 +1,5 @@
 var title = "Duke Social Support Index"
+var shortTitle = 'DSSI'
 var instructions = " "
 var reference = ""
 var values = [0, 1, 2, 3, 4]
@@ -138,6 +139,7 @@ var pages = [
 
 var EN_dssi = {}
 EN_dssi.title = title
+EN_dssi.shortTitle = shortTitle
 EN_dssi.description = "PLEASE CHECK THE BOX NEXT TO YOUR RESPONSE TO THE QUESTIONS PRESENTED BELOW."
 EN_dssi.pages = pages
 EN_dssi.values = values
