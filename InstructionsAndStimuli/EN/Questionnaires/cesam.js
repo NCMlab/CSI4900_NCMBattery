@@ -1,6 +1,6 @@
 
 var title = "The Centre of Excellence Self Administered questionnaire)"
-
+var shortTitle = "CESAM"
 var description = "PLEASE CHECK THE BOX NEXT TO YOUR RESPONSE TO THE QUESTIONS PRESENTED BELOW."
 
 
@@ -67,6 +67,7 @@ var EN_pages = [
 ]
 var EN_cesam = {}
 EN_cesam.title = title
+EN_cesam.shortTitle = shortTitle
 EN_cesam.pages = EN_pages
 EN_cesam.description = description
 EN_cesam.QuestionnaireType = 'likert'
