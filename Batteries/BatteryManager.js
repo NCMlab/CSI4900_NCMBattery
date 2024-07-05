@@ -58,7 +58,7 @@ var SetupBattery = {
       JATOSSessionData = jatos.studySessionData
       if ( isEmpty(JATOSSessionData) ) {
         // Add things to the jatos session data
-        JATOSSessionData = {CurrentIndex: 0, TaskNameList:TaskNameList, ComponentParameterLists:ParameterList} 
+        JATOSSessionData = {CurrentIndex: 0, TaskNameList:TaskNameList, ComponentParameterLists:ParameterList, TaskIconList: TaskIconList} 
         // add the ID to return to the JATOS battery
         JATOSSessionData.BatteryHtmlID = BatteryHtmlID
         JATOSSessionData.UsageManagerHtmlID = UsageManagerHtmlID

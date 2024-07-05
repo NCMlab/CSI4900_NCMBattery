@@ -88,7 +88,7 @@ var SetupBattery = {
       console.log(JATOSSessionData)
       if ( isEmpty(JATOSSessionData) ) {
         // Add things to the jatos session data
-        JATOSSessionData = {CurrentIndex: 0, TaskNameList:TaskList, ComponentParameterLists:ParameterList} 
+        JATOSSessionData = {CurrentIndex: 0, TaskNameList:TaskList, ComponentParameterLists:ParameterList,TaskIconList: TaskIconList} 
         // add the ID to return to the JATOS battery
         JATOSSessionData.BatteryHtmlID = BatteryHtmlID
         // If this is the first visit to this manager, display the battery instructions
