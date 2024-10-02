@@ -30,6 +30,7 @@ function WordRecall_Scoring(data, WordListA, WordListB) {
 	var IntrusionArrayB = []
 	var userSaidA = []
 	var userSaidB = []
+	var Audio = []
 	for ( var i = 0; i < Acount + Bcount; i++ )
 	{
 		if ( temp.trials[i].type == 'A' ) 
@@ -37,6 +38,7 @@ function WordRecall_Scoring(data, WordListA, WordListB) {
 				ResponseArrayA.push(temp.trials[i].RecallBlock) 
 				IntrusionArrayA.push(temp.trials[i].IntrusionList)
 				userSaidA.push(temp.trials[i].userSaid)
+				Audio.push(temp.trials[i].response)
 			}
 
 		else { 
@@ -160,7 +162,9 @@ function WordRecall_Scoring(data, WordListA, WordListB) {
 	Results.AllResults['WordListA'] = WordListA
 	
 	Results.AllResults['User Said A'] = userSaidA
+
 	
+	Results.AllResults['Audio'] = Audio
 	/*Results.AllResults['User Said'] = []
     for ( var i = 0; i < TrialData.trials.length; i++ )
 	  {

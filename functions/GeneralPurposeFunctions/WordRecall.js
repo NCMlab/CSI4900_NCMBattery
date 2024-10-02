@@ -271,6 +271,7 @@ var SpokenRecallA = {
       data.task = 'Recall'
       data.type = 'A'
       data.userSaid = userSaidWords
+      data.Audio = this.response
       BlockCount++
       clearInterval(interval);
       annyang.abort()

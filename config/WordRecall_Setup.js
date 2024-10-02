@@ -402,7 +402,7 @@ var DemoEN = {
 	ShowWelcome: false,
 	WelcomeSpoken: false,
 	WelcomeAudio: 'assets/SoundFiles/Instructions/Welcome_WordRecall.wav',
-	ShowThankYou: false,
+	ShowThankYou: true,
 	ShowInstructions: true, 
 	InstructionsSpoken: false,
 	AskForNotes: false,

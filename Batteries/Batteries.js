@@ -18,7 +18,7 @@ List.push({Task: 'Questionnaire', Parameters: 'STAI_T_001', Instructions: 'Defau
 List.push({Task: 'Questionnaire', Parameters: 'STAI_S_001', Instructions: 'Default', IconName: 'STAI_S'})
 List.push({Task: 'Questionnaire', Parameters: 'BDI_001', Instructions: 'Default', IconName: 'BDI/GDS'})
 
-BatteryList.push({index: 16, 
+BatteryList.push({index: 1016, 
 	name:'H-10-23-9755', 
     description: 'Test',
     BatteryInstructions: '<p class="Instructions">Welcome to the University of Ottawa\'s Neural Cognitive Mapping Laboratory - <b>Cognitive Evaluation</b>',

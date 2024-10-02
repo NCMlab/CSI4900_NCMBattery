@@ -70,6 +70,8 @@ var SetupBattery = {
       else {DisplayBatteryInstructionsFlag = false}
       console.log('FIRST TIME THROUGH: '+DisplayBatteryInstructionsFlag)
       jatos.studySessionData = JATOSSessionData
+      console.log("JATOS:")
+      console.log(jatos)
   },
   on_finish: function(data) {
     data.trial = 'Battery Manager'
