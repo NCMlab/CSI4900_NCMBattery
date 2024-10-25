@@ -6,6 +6,24 @@ var FixationTimeBetweenWords = 200 // milliseconds
 
 
 
+var WordRecall_Default = {
+	FolderName: 'RAVLTSet001/', // dropdown: RAVLT_en_US-Neural2-F_Speed100, Demo, RAVLT_fr_FR-Neural2-A_Speed100
+	WordList: 'RAVLT', // EN_RAVLT, EN_Demo, FR_RAVLT
+	FileExtension: '.wav', // This is the only option now
+	NBlocks: 2, // number: min: 1, max: 10
+	BListFlag: true, // Check to see if there is a second set of words
+	RecallType: 'Manual', // Dropdown: Manual, Spoken
+	RecallDuration: 60, // number: min: 5, max: 600 seconds 
+	TimePerWord: 150, // number: min 100, max: 2000, units of milliseconds
+	DelayedRecallFlag: false,
+	ShowWelcome: false,
+	ShowThankYou: false,
+	ShowInstructions: true, // not implemented
+	AskForNotes: false,
+	RecordAUDIO: false,
+}
+
+
 var RAVLT_Default = {
 	FolderName: 'RAVLTSet001/',
 	WordList: 'RAVLT',
