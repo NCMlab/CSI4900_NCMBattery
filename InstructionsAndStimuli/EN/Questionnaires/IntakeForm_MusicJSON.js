@@ -24,7 +24,7 @@ const json = {
                       'Female',
               ],
           showOtherItem: true,
-          required: true,
+          isRequired: true,
         },
         {
           name: "Height",
@@ -33,7 +33,6 @@ const json = {
           inputType: "number",
           min: 0,
           max: 300,
-          defaultValue: 0,
           isRequired: true
         },
         {
@@ -45,7 +44,7 @@ const json = {
                       'Centimeters',
               ],
           showOtherItem: false,
-          required: true,
+          isRequired: true,
         },
         {
           name: "Weight",
@@ -54,7 +53,6 @@ const json = {
           inputType: "number",
           min: 0,
           max: 1000,
-          defaultValue: 0,
           isRequired: true
         },
         {
@@ -66,7 +64,7 @@ const json = {
                       'Kilograms',
               ],
           showOtherItem: false,
-          required: true,
+          isRequired: true,
         },
         {
           type: 'dropdown',
@@ -81,7 +79,7 @@ const json = {
                       'Doctoral degree'
               ],
           showOtherItem: true,
-          required: true,
+          isRequired: true,
         },
         {
           type: 'dropdown',
@@ -94,14 +92,14 @@ const json = {
                       'Unemployed'
               ],
           showOtherItem: true,
-          required: true,
+          isRequired: true,
         },
         {
           type: 'comment',
           title: 'What type of work do you do (or did you do before retirement)?',
           name: 'WorkType',
           rows: 2,
-          required: true,
+          isRequired: true,
           autoGrow: true
         },          
         {
@@ -116,26 +114,28 @@ const json = {
                   'In assisted living facility'
               ],
           showOtherItem: true,
-          required: true,
+          isRequired: true,
         },
         {
           type: 'text',
           title: 'What is your primary language(s)?',
           name: 'PrimaryLanguage',
-          required: true,
+          isRequired: true,
         },
         {
           name: "LanguageProblem",
           type: "dropdown",
           title: "Are there any language or communication challenges you have?",
-          choices: ["Yes", "No"]
+          choices: ["Yes", "No"],
+          isRequired: true,
         }, 
         {
           name: "LanguageProblemDescription",
           type: "comment",
           title: "Please specify your language or communication challenges.",
           visibleIf: "{LanguageProblem} == Yes",
-          maxLength: 500
+          maxLength: 500,
+          isRequired: true,
         },
         {
           type: "tagbox",
@@ -165,7 +165,7 @@ const json = {
           ],
           name: 'marital',
           showOtherItem: true,                    
-          required: true,
+          isRequired: true,
         },
         {
           type: 'dropdown',
@@ -180,7 +180,7 @@ const json = {
               "Above $100,000"
           ],
           name: 'Income',
-          required: true,
+          isRequired: true,
         }
        ]
      },
@@ -199,7 +199,7 @@ const json = {
               "No",
               "Not sure"
           ],
-          required: true,
+          isRequired: true,
           //add_other_option: true,                    
           //other_option_text: 'Yes, how long ago were you diagnosed?',
       },
@@ -208,7 +208,7 @@ const json = {
         title: 'If yes, how long ago were you diagnosed?',
         name: 'DementiaTime',
         visibleIf: "{CognDeclineDiagnosis} == Yes",
-        required: false,
+        isRequired: true,
         textbox_rows: 3,
       },
       {
@@ -216,7 +216,7 @@ const json = {
         title: 'If yes, what type of dementia (or cognitive decline), if known?',
         name: 'DementiaType',
         visibleIf: "{CognDeclineDiagnosis} == Yes",
-        required: false,
+        isRequired: true,
         textbox_rows: 3,
       },
       {
@@ -229,7 +229,7 @@ const json = {
               "Not sure"
           ],
           name: 'HearingLoss',
-          required: true,
+          isRequired: true,
           //add_other_option: true,                    
           //other_option_text: 'Yes, how long ago were you diagnosed?',
       },
@@ -244,7 +244,7 @@ const json = {
         ],
         name: 'HearingLossType',
         visibleIf: "{HearingLoss} == Yes",
-        required: false,
+        isRequired: true,
         //add_other_option: true,                    
         //other_option_text: 'Yes, how long ago were you diagnosed?',
     },
@@ -260,7 +260,7 @@ const json = {
       ],
       visibleIf: "{HearingLoss} == Yes",
       name: 'HearingLossLevel',
-      required: false,
+      isRequired: true,
       //add_other_option: true,                    
       //other_option_text: 'Yes, how long ago were you diagnosed?',
     },
@@ -273,14 +273,14 @@ const json = {
           "No"
       ],
       name: 'OtherHealthIssues',
-      required: true,
+      isRequired: true,
     },
     {
       type: 'comment',
       title: 'Please explain your health issues.',
       name: 'OtherHealthIssues',
       visibleIf: "{OtherHealthIssues} == Yes",
-      required: false,
+      isRequired: true,
       textbox_rows: 3,
     },
        ]
@@ -298,7 +298,7 @@ const json = {
               "0", "1","2","3","4","5","6","7"
           ],
           name: 'ExerciseFrequency',
-          required: true,
+          isRequired: true,
         },
         {
           type: 'dropdown',
@@ -309,7 +309,7 @@ const json = {
             "No"
           ],
           name: 'Exercise24',
-          required: true,
+          isRequired: true,
         },
         {
           type: 'dropdown',
@@ -322,7 +322,7 @@ const json = {
               "Unknown"
           ],
           name: 'Smoke',
-          required: true,
+          isRequired: true,
         },
         {
           type: 'dropdown',
@@ -332,7 +332,7 @@ const json = {
           choicesMax: 2024,
           choicesStep:1,
           name: 'SmokeStart',
-          required: false,
+          isRequired: true,
           input_type: "number"
         },
         {
@@ -343,7 +343,7 @@ const json = {
           choicesMax: 2024,
           choicesStep:1,
           name: 'SmokeQuit',
-          required: false,
+          isRequired: true,
           input_type: "number"
         },
         {
@@ -352,7 +352,7 @@ const json = {
           visibleIf: "{Smoke} == 'Currently smoke' or {Smoke} == 'Have not smoked for more than 1 year'",
           choices: ["0","0.5","1","2","3","4","5","6",">6"],
           name: 'SmokePacksPerDay',
-          required: false,
+          isRequired: true,
           input_type: "number"
         },
         {
@@ -366,7 +366,7 @@ const json = {
               "More than 4 drinks per day"
           ],
           name: 'Alcohol',
-          required: true,
+          isRequired: true,
         },
       
   
@@ -386,14 +386,14 @@ const json = {
               "No",
             ],
             name: 'MusicMovement',
-            required: true,
+            isRequired: true,
           },
           {
             type: 'comment',
             title: 'Please describe your previous  music and movement experience (what type of class and for how long).',
             name: 'MusicExperience',
             visibleIf: "{MusicMovement} == Yes",
-            required: false,
+            isRequired: true,
             textbox_rows: 3,
           },
           {
@@ -405,14 +405,14 @@ const json = {
               "No",
             ],
             name: 'GroupMusic',
-            required: true,
+            isRequired: true,
           },
           {
             type: 'comment',
             title: 'Please describe your previous group music experience (what type of class and for how long).',
             name: 'GroupMusicExperience',
             visibleIf: "{GroupMusic} == Yes",
-            required: false,
+            isRequired: true,
             textbox_rows: 3,
           },
           {
@@ -424,14 +424,14 @@ const json = {
               "No",
             ],
             name: 'Choir',
-            required: true,
+            isRequired: true,
           },
           {
             type: 'comment',
             title: 'Please describe your previous choir experience (what type of choir and for how long).',
             name: 'ChoirExperience',
             visibleIf: "{Choir} == Yes",
-            required: false,
+            isRequired: false,
             textbox_rows: 3,
           },
           {
@@ -443,14 +443,14 @@ const json = {
               "No",
             ],
             name: 'OtherMusic',
-            required: true,
+            isRequired: true,
           },
           {
             type: 'comment',
             title: 'Which instrument(s) did you play?',
             name: 'WhichInstrument',
             visibleIf: "{OtherMusic} == Yes",
-            required: false,
+            isRequired: true,
             textbox_rows: 3,
           },
           {
@@ -458,7 +458,7 @@ const json = {
             title: 'At what age did you start playing the instrument(s)?',
             name: 'AgeStartInstrument',
             visibleIf: "{OtherMusic} == Yes",
-            required: false,
+            isRequired: true,
             textbox_rows: 3,
           },
           {
@@ -466,7 +466,7 @@ const json = {
             title: 'For how long did you play this instrument (years)?',
             name: 'YearsPlayInstrument',
             visibleIf: "{OtherMusic} == Yes",
-            required: false,
+            isRequired: true,
             textbox_rows: 3,
           },
           {
@@ -479,7 +479,7 @@ const json = {
             ],
             visibleIf: "{OtherMusic} == Yes",
             name: 'StillPlayInstrument',
-            required: true,
+            isRequired: true,
           },
       ]
     },
@@ -492,7 +492,7 @@ const json = {
           type: 'comment',
           title: 'Do you have any additional comments or information that you think might be relevant to this study and/or music classes?',
           name: 'AdditionalCOmments',
-          required: false,
+          isRequired: true,
           textbox_rows: 5,
         }
       ]
