@@ -357,7 +357,7 @@ List.push({Task: 'EQ5D', Parameters: 'EQ5D_001', Instructions: 'Default', IconNa
 List.push({Task: 'Questionnaire', Parameters: 'WEMWBS_001', Instructions: 'Default', IconName: 'WEMWBS'})
 List.push({Task: 'Questionnaire', Parameters: 'PAES_001', Instructions: 'Default', IconName: 'PAES'})
 
-List.push({Task: 'Questionnaire', Parameters: 'MusicDemographics_001', Instructions: 'Default', IconName: 'Music Intake'})
+List.push({Task: 'Questionnaire', Parameters: 'MusicDemographics_001', Instructions: 'Default', IconName: 'Music IntakeX'})
 
 
 	BatteryList.push({index: 1007, 
